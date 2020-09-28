@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +8,23 @@
         body {
             background-color: #2f3437;
         }
+        .weat {
+            border-radius: 3px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgba(255, 255, 255, 0.07);
+            background-color: transparent;
+        }
     </style>
 </head>
 <body>
-    <a class="weatherwidget-io" href="https://forecast7.com/ru/55d7637d62/moscow/" data-label_1="Москва" data-mode="Forecast" data-theme="pure" data-basecolor="#2f3437" data-textcolor="#f9f7f7" data-lowcolor="#f9f7f7" data-mooncolor="#f9f7f7" data-cloudcolor="#f9f7f7" data-raincolor="#f9f7f7" >Москва</a>
-    <script>
-    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-    </script>
+    <div class="weat">
+        <a class="weatherwidget-io" href="https://forecast7.com/ru/55d7637d62/moscow/" data-label_1="Москва" data-mode="Both" data-theme="pure" data-basecolor="#2f3437" data-textcolor="#f9f7f7" data-lowcolor="#f9f7f7" data-mooncolor="#f9f7f7" data-cloudcolor="#f9f7f7" data-raincolor="#f9f7f7" >Москва</a>
+        <script>
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+        </script>
+    </div>
 
 </body>
 </html>
+
